@@ -7,11 +7,26 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput placeholder="Email" formControlName="firstName" />
+            <input matInput placeholder="Email" formControlName="email" />
             <mat-error
-              *ngIf="addressForm.controls['firstName'].hasError('required')"
+              *ngIf="addressForm.controls['email'].hasError('required')"
             >
-              Email<strong>required</strong>
+              Email é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              placeholder="Senha"
+              formControlName="password"
+              type="password"
+            />
+            <mat-error
+              *ngIf="addressForm.controls['password'].hasError('required')"
+            >
+              Senha é <strong>obrigatório</strong>
             </mat-error>
           </mat-form-field>
         </div>
