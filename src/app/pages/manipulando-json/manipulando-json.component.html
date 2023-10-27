@@ -16,6 +16,11 @@
         <td>{{ student.name }}</td>
         <td>{{ student.email }}</td>
         <td>{{ student.gender }}</td>
+        <td>
+          <button mat-button (click)="goToDetail(student)">
+            Mais Detalhes
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

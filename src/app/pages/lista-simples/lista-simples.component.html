@@ -1,0 +1,26 @@
+<p>lista-simples works!</p>
+<h2>Lista Simples de Usuários</h2>
+<br />
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>
+          <button mat-button (click)="goToDetail(user)">Mais Detalhes</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
