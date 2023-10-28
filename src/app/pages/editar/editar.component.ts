@@ -1,40 +1,38 @@
 import { Component, inject } from '@angular/core';
-
 import { FormBuilder, Validators } from '@angular/forms';
 import { User } from 'src/app/models/user';
 
 @Component({
-  selector: 'app-cadastro',
-  templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.css'],
+  selector: 'app-editar',
+  templateUrl: './editar.component.html',
+  styleUrls: ['./editar.component.css'],
 })
-export class CadastroComponent {
+export class EditarComponent {
   private fb = inject(FormBuilder);
   user: User = new User();
-  addressForm = this.fb.group({
-    id: '',
-    firstName: [
-      null,
-      Validators.compose([
-        Validators.required,
-        Validators.minLength(3),
-        Validators.maxLength(20),
-      ]),
-    ],
-    email: [
-      null,
-      Validators.compose([
-        Validators.required,
-        Validators.minLength(6),
-        Validators.maxLength(30),
-        Validators.email,
-      ]),
-    ],
-    phone: [null, Validators.required],
-    password: [null, Validators.required],
-  });
+  addressForm: any;
+  email: any;
 
-  email = this.addressForm.controls['email'];
+  constructor() {
+    if (localStorage.getItem('user')) {
+      this.user = JSON.parse(localStorage.getItem('user') || '{}');
+    }
+    this.addressForm = this.fb.group({
+      id: '',
+      firstName: [
+        this.user.firstName,
+        Validators.compose([
+          Validators.required,
+          Validators.minLength(3),
+          Validators.maxLength(20),
+        ]),
+      ],
+      email: [this.user.email, Validators.required],
+      phone: [this.user.phone, Validators.required],
+      password: [null, Validators.required],
+    });
+    this.email = this.addressForm.controls['email'];
+  }
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
@@ -44,6 +42,12 @@ export class CadastroComponent {
       ? 'Você deve preencher um e-mail válido'
       : '';
   }
+
+  // constructor() {
+  //   if (localStorage.getItem('user')) {
+  //     this.user = JSON.parse(localStorage.getItem('user') || '{}');
+  //   }
+  // }
 
   onSubmit(): void {
     this.user.id = '1';
