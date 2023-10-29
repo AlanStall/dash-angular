@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { GenericValidator } from 'src/app/comum/validador';
 import { User } from 'src/app/models/user';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -11,6 +12,7 @@ import { User } from 'src/app/models/user';
 })
 export class CadastroComponent {
   private fb = inject(FormBuilder);
+  // private service: UserService;
   user: User = new User();
   addressForm = this.fb.group({
     id: '',
@@ -37,10 +39,13 @@ export class CadastroComponent {
     ],
     cnpj: [null, Validators.required],
     phone: [null, Validators.required],
+    dateBirth: [null, Validators.required],
     password: [null, Validators.required],
   });
 
   email = this.addressForm.controls['email'];
+
+  constructor(private service: UserService) {}
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
@@ -52,18 +57,29 @@ export class CadastroComponent {
   }
 
   onSubmit(): void {
-    this.user.id = '1';
     if (this.addressForm.controls['firstName'].value)
       this.user.firstName = this.addressForm.controls['firstName'].value;
     if (this.addressForm.controls['email'].value)
       this.user.email = this.addressForm.controls['email'].value;
     if (this.addressForm.controls['phone'].value)
       this.user.phone = this.addressForm.controls['phone'].value;
+    if (this.addressForm.controls['cpf'].value)
+      this.user.cpf = this.addressForm.controls['cpf'].value;
+    if (this.addressForm.controls['dateBirth'].value)
+      this.user.dateBirth = this.addressForm.controls['dateBirth'].value;
     if (this.addressForm.controls['password'].value)
       this.user.password = this.addressForm.controls['password'].value;
 
-    alert('Você cadastrou!');
-    console.log(this.user);
-    localStorage.setItem('user', JSON.stringify(this.user));
+    this.service.addUsers(this.user).subscribe({
+      next: (response) => {
+        console.log(response);
+        alert('Dado registrado com sucesso!');
+      },
+      error: (error: any) => {
+        console.log(error);
+        alert('Ocorreu algum erro!');
+      },
+    });
+    // localStorage.setItem('user', JSON.stringify(this.user));
   }
 }

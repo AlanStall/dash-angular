@@ -31,7 +31,19 @@ import { DetalheComponent } from './pages/detalhe/detalhe.component';
 import { ListaSimplesComponent } from './pages/lista-simples/lista-simples.component';
 import { EditarComponent } from './pages/editar/editar.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { UserService } from './services/user.service';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {
+  DialogContentExampleDialog,
+  ModalComponent,
+} from './pages/modal/modal.component';
 
+// MODALS
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +62,7 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     DetalheComponent,
     ListaSimplesComponent,
     EditarComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,8 +81,15 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     HttpClientModule,
     NgxMaskDirective,
     NgxMaskPipe,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatBottomSheetModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    DialogContentExampleDialog,
   ],
-  providers: [provideNgxMask()],
+  providers: [provideNgxMask(), UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

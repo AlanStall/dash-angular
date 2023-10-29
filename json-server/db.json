@@ -4,6 +4,8 @@
       "id": 1,
       "firtName": "Bruno Hauck",
       "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
       "email": "brunohauck@gmail.com",
       "password": "123456"
     },
@@ -11,8 +13,40 @@
       "id": 2,
       "firtName": "Hauck Bruno",
       "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
       "email": "hauckbruno@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": 3,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 4,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 5,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
     }
   ]
 }
