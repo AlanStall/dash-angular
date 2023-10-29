@@ -30,6 +30,7 @@ import { PrivadoComponent } from './pages/privado/privado.component';
 import { DetalheComponent } from './pages/detalhe/detalhe.component';
 import { ListaSimplesComponent } from './pages/lista-simples/lista-simples.component';
 import { EditarComponent } from './pages/editar/editar.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,8 @@ import { EditarComponent } from './pages/editar/editar.component';
     MatCardModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
   ],
   providers: [],
   bootstrap: [AppComponent],
