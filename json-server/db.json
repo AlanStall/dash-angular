@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "firtName": "Bruno Hauck",
+      "firstName": "Bruno Hauck",
       "phone": "123456789",
       "dateBirth": "2022-11-15T03:00:00.000Z",
       "cpf": "76546824256",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "firtName": "Hauck Bruno",
+      "firstName": "Hauck Bruno",
       "phone": "123456789",
       "dateBirth": "2022-11-15T03:00:00.000Z",
       "cpf": "39424788894",
@@ -46,6 +46,16 @@
       "cpf": "78358779615",
       "cnpj": "",
       "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 6,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
       "password": "12345678"
     }
   ]
