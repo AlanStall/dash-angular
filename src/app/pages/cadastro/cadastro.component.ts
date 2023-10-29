@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 
 import { FormBuilder, Validators } from '@angular/forms';
+import { GenericValidator } from 'src/app/comum/validador';
 import { User } from 'src/app/models/user';
 
 @Component({
@@ -30,7 +31,11 @@ export class CadastroComponent {
         Validators.email,
       ]),
     ],
-    cpf: [null, Validators.required],
+    cpf: [
+      null,
+      Validators.compose([Validators.required, GenericValidator.isValidCpf()]),
+    ],
+    cnpj: [null, Validators.required],
     phone: [null, Validators.required],
     password: [null, Validators.required],
   });
