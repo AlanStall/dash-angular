@@ -30,6 +30,7 @@ export class CadastroComponent {
         Validators.email,
       ]),
     ],
+    cpf: [null, Validators.required],
     phone: [null, Validators.required],
     password: [null, Validators.required],
   });
