@@ -44,6 +44,10 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { TableComponent } from './pages/table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,6 +67,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     ListaSimplesComponent,
     EditarComponent,
     ModalComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,6 +93,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSnackBarModule,
     MatTooltipModule,
     DialogContentExampleDialog,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [provideNgxMask(), UserService],
   bootstrap: [AppComponent],

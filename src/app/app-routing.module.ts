@@ -14,6 +14,7 @@ import { DetalheComponent } from './pages/detalhe/detalhe.component';
 import { ListaSimplesComponent } from './pages/lista-simples/lista-simples.component';
 import { EditarComponent } from './pages/editar/editar.component';
 import { ModalComponent } from './pages/modal/modal.component';
+import { TableComponent } from './pages/table/table.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'editar', component: EditarComponent },
   { path: 'modal', component: ModalComponent },
+  { path: 'table', component: TableComponent },
   { path: 'listar', component: ListarComponent },
   { path: 'lista-simples', component: ListaSimplesComponent },
   { path: 'detalhe/:id/:phone', component: DetalheComponent },
