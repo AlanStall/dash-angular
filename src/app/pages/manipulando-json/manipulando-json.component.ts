@@ -22,6 +22,6 @@ export class ManipulandoJsonComponent implements OnInit {
   }
 
   goToDetail(student: Student) {
-    this.route.navigate(['detalhe', student.email]);
+    this.route.navigate(['detalhe', student.id, student.email]);
   }
 }
