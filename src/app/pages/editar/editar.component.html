@@ -4,47 +4,108 @@
       <mat-card-title>Cadastro</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <div class="col">
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Nome" formControlName="firstName" />
-          <mat-error
-            *ngIf="addressForm.controls['firstName'].hasError('required')"
-          >
-            Nome é <strong>obrigatório</strong>
-          </mat-error>
-        </mat-form-field>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Nome" formControlName="firstName" />
+            <mat-error
+              *ngIf="addressForm.controls['firstName'].hasError('required')"
+            >
+              Nome é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Email" formControlName="email" />
+            <mat-error
+              *ngIf="addressForm.controls['email'].hasError('required')"
+            >
+              Email é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
       </div>
-      <div class="col">
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Email" formControlName="email" />
-          <mat-error *ngIf="addressForm.controls['email'].hasError('required')">
-            Email é <strong>obrigatório</strong>
-          </mat-error>
-        </mat-form-field>
-      </div>
-
-      <div class="col">
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Telefone" formControlName="phone" />
-          <mat-error *ngIf="addressForm.controls['phone'].hasError('required')">
-            Telefone é <strong>obrigatório</strong>
-          </mat-error>
-        </mat-form-field>
-      </div>
-      <div class="col">
-        <mat-form-field class="full-width">
+      <div class="row">
+        <mat-form-field>
+          <mat-label>Choose a date</mat-label>
           <input
             matInput
-            placeholder="Senha"
-            formControlName="password"
-            type="password"
+            [matDatepicker]="picker"
+            formControlName="dateBirth"
           />
-          <mat-error
-            *ngIf="addressForm.controls['firstName'].hasError('required')"
-          >
-            Senha é <strong>obrigatório</strong>
-          </mat-error>
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              placeholder="Telefone"
+              formControlName="phone"
+              mask="(00) 00000 0000"
+            />
+            <mat-error
+              *ngIf="addressForm.controls['phone'].hasError('required')"
+            >
+              Telefone é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              placeholder="CPF"
+              formControlName="cpf"
+              mask="000.000.000-00"
+            />
+            <mat-error *ngIf="addressForm.controls['cpf'].hasError('required')">
+              CPF é <strong>obrigatório</strong>
+            </mat-error>
+            <mat-error
+              *ngIf="addressForm.controls['cpf'].getError('cpfNotValid')"
+            >
+              CPF não é <strong>válido</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              placeholder="CNPJ"
+              formControlName="cnpj"
+              mask="00.000.000/0000-00"
+            />
+            <mat-error
+              *ngIf="addressForm.controls['cnpj'].hasError('required')"
+            >
+              CNPJ é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              matInput
+              placeholder="Senha"
+              formControlName="password"
+              type="password"
+            />
+            <mat-error
+              *ngIf="addressForm.controls['password'].hasError('required')"
+            >
+              Senha é <strong>obrigatório</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
       </div>
     </mat-card-content>
     <mat-card-actions>

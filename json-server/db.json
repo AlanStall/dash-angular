@@ -57,6 +57,444 @@
       "cnpj": "",
       "email": "juca@uol.com.br",
       "password": "12345678"
+    },
+    {
+      "id": 7,
+      "firstName": "Bruno Hauck",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
+      "email": "brunohauck@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 8,
+      "firstName": "Hauck Bruno",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
+      "email": "hauckbruno@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 9,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 10,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 11,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 12,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 13,
+      "firstName": "Bruno Hauck",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
+      "email": "brunohauck@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 14,
+      "firstName": "Hauck Bruno",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
+      "email": "hauckbruno@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 15,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 16,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 17,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 18,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 19,
+      "firstName": "Bruno Hauck",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
+      "email": "brunohauck@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 20,
+      "firstName": "Hauck Bruno",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
+      "email": "hauckbruno@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 21,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 22,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 23,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 24,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 25,
+      "firstName": "Bruno Hauck",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
+      "email": "brunohauck@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 26,
+      "firstName": "Hauck Bruno",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
+      "email": "hauckbruno@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 27,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 28,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 29,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 30,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 31,
+      "firstName": "Bruno Hauck",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
+      "email": "brunohauck@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 32,
+      "firstName": "Hauck Bruno",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
+      "email": "hauckbruno@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 33,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 34,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 35,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 36,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 37,
+      "firstName": "Bruno Hauck",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "76546824256",
+      "email": "brunohauck@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 38,
+      "firstName": "Hauck Bruno",
+      "phone": "123456789",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "39424788894",
+      "email": "hauckbruno@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 39,
+      "firstName": "joao da silva",
+      "phone": "44738298292",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "65481788152",
+      "cnpj": "",
+      "email": "joaodasilva@terra.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 40,
+      "firstName": "jessica stall",
+      "phone": "44871924691",
+      "dateBirth": "2022-11-15T03:00:00.000Z",
+      "cpf": "81230222715",
+      "cnpj": "",
+      "email": "jessicarsantos@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 41,
+      "firstName": "Ambrosio Valentim",
+      "phone": "48727119190",
+      "dateBirth": "",
+      "cpf": "78358779615",
+      "cnpj": "",
+      "email": "ambrosiovalentim@bol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 42,
+      "firstName": "Juca Mafra Vila",
+      "phone": "32551778189",
+      "dateBirth": "1981-02-03T03:00:00.000Z",
+      "cpf": "75863474335",
+      "cnpj": "",
+      "email": "juca@uol.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": 43,
+      "firstName": "Jorge Rei Floresta",
+      "phone": "46333221113",
+      "dateBirth": "2023-11-01T03:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "florestadojorge@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 44,
+      "firstName": "Jorge Rei Amazonia",
+      "phone": "99999999999",
+      "dateBirth": "2023-11-01T03:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "florestadojorge@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 45,
+      "firstName": "Teletubes Ronaldo",
+      "phone": "32266667777",
+      "dateBirth": "2023-11-01T03:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "teletubesglobo@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 46,
+      "firstName": "Tio Bob tá cansado",
+      "phone": "55505005505",
+      "dateBirth": "1944-05-08T03:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "tiobobcansado@sim.com",
+      "password": "12345678"
+    },
+    {
+      "id": 47,
+      "firstName": "Power Ranges",
+      "phone": "78552667277",
+      "dateBirth": "2016-01-11T02:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "pr@gmail.com",
+      "password": "888888888"
+    },
+    {
+      "id": 48,
+      "firstName": "Power Ranges",
+      "phone": "78552667277",
+      "dateBirth": "2016-01-11T02:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "pr@gmail.com",
+      "password": "888888888"
+    },
+    {
+      "id": 49,
+      "firstName": "Power Ranges 22",
+      "phone": "78552667277",
+      "dateBirth": "2016-01-11T02:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "pr22@gmail.com",
+      "password": "888888888"
+    },
+    {
+      "id": 50,
+      "firstName": "Power Ranges 33",
+      "phone": "78552667277",
+      "dateBirth": "2016-01-11T02:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "pr22@gmail.com",
+      "password": "888888888"
+    },
+    {
+      "id": 51,
+      "firstName": "Scooby Doo",
+      "phone": "41223344556",
+      "dateBirth": "2023-11-02T03:00:00.000Z",
+      "cpf": "05931178910",
+      "cnpj": "",
+      "email": "scoobyProtein@gmail.com",
+      "password": "88888888"
     }
   ]
 }

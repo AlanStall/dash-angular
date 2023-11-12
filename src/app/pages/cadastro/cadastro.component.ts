@@ -80,6 +80,6 @@ export class CadastroComponent {
         alert('Ocorreu algum erro!');
       },
     });
-    // localStorage.setItem('user', JSON.stringify(this.user));
+    localStorage.setItem('user', JSON.stringify(this.user));
   }
 }

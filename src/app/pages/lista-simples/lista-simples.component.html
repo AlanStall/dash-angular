@@ -1,4 +1,4 @@
-<p>lista-simples works!</p>
+<!-- <p>lista-simples works!</p>
 <h2>Lista Simples de Usuários</h2>
 <br />
 <div>
@@ -23,4 +23,56 @@
       </tr>
     </tbody>
   </table>
+</div> -->
+
+<!-- <div class="carrinho-container">
+  <h2>Carrinho de Compras</h2>
+  <div *ngFor="let user of users; let i = index" class="produto">
+    <div class="info-produto">
+      <span
+        >{{ user.firstName }} - R${{ user.id }} (Quantidade:
+        {{ user.id }})</span
+      >
+      <button (click)="adicionarNoCarrinho(i)">+</button>
+      <button (click)="removeDoCarrinho(i)">-</button>
+      <button (click)="removeDoCarrinho(i)">Remover</button>
+    </div>
+  </div>
+  <button (click)="calcularValorTotal()" class="calcular-total-btn">
+    Calcular Total
+  </button>
+  <div *ngFor="let user of users; let i = index" class="total">
+    Total: R$ {{ user.id }}
+  </div>
+</div> -->
+
+<div class="carrinho-container">
+  <h2>Carrinho de Compras</h2>
+  <div *ngFor="let user of users; let i = index">
+    <div class="box-produto">
+      <div class="info-produto">
+        <p>{{ user.firstName }}</p>
+        <div class="info-preco-quantidade">
+          <p>{{ user.id }}</p>
+        </div>
+      </div>
+      <div class="box-quantidade">
+        <div class="info-quantidade">
+          <p class="text-quantidade">Quantidade:</p>
+          <p class="number-quantidade">{{ user.id }}</p>
+        </div>
+        <div class="box-botoes">
+          <button>+</button>
+          <button>-</button>
+          <button>Remover</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="total">Total: R$ 2.329,90</div>
+  <div class="botoesComprar">
+    <button>Adicionar Mais Produtos</button>
+    <button>Concluir a Compra</button>
+  </div>
 </div>
